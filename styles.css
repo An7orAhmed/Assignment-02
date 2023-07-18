@@ -7,6 +7,11 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-size: 18px;
+  line-height: 30px;
+}
+
 .button {
   padding: 20px 40px;
   border-radius: 48px;
@@ -73,7 +78,7 @@ header {
   text-transform: uppercase;
 }
 
-.banner-left h1, .gamer-right h1, .videos h2 span {
+.banner-left h1, .gamer-right h1, .videos span, .down-left span {
   font-size: 4em;
   background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
   background-clip: text;
@@ -152,6 +157,7 @@ header {
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
   column-gap: 24px;
 }
 
@@ -165,7 +171,7 @@ header {
 }
 
 .card {
-  width: auto;
+  width: 330px;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
@@ -175,13 +181,13 @@ header {
 
 .hover {
   width: calc(100% - 10px);
-  height: calc(100% - 72px);
+  height: calc(100% - 92px);
   border: 5px solid #F948B2;
   border-radius: 16px;
   position: absolute;
   display: flex;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 1s;
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -195,6 +201,42 @@ header {
 
 .card:hover .hover {
   opacity: 1;
+}
+
+.no-downloads {
+  padding: 0 240px 195px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+
+.down-left {
+  width: 355px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  row-gap: 24px;
+}
+
+.down-left h3 {
+  font-size: 2em;
+}
+
+.down-left h3 span {
+  font-size: 1em;
+}
+
+.down-right {
+  position: relative;
+}
+
+.img2 {
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  bottom: -10%;
+  left: -15%;
 }
 
 /*Other device breakpoints */
@@ -249,6 +291,22 @@ header {
     grid-template-columns: 1fr;
     row-gap: 20px;
   }
+
+  .no-downloads {
+    padding: 0 50px 100px;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .down-left {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img2 {
+    left: 25%;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
@@ -292,5 +350,21 @@ header {
   .cards {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 20px;
+  }
+
+  .no-downloads {
+    padding: 0 50px 150px;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .down-left {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img2 {
+    left: 25%;
   }
 }
