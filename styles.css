@@ -63,6 +63,7 @@ header {
   row-gap: 25px;
   background-image: url("images/Group 14.png");
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .banner-left h2 {
@@ -112,8 +113,12 @@ header {
 
 /*Other device breakpoints */
 @media (max-width: 576px) {
+  .button {
+    padding: 20px 30px;
+  }
+
   header {
-    padding: auto;
+    padding: 50px 50px;
     flex-direction: column;
     row-gap: 30px;
   }
@@ -126,16 +131,38 @@ header {
   .banner {
     flex-direction: column;
   }
+
+  .banner-left {  
+    padding: 50px 50px;
+    background-size: 100% 100%;
+  }
+
+  .banner-right {
+    margin: 0 auto;
+    justify-content: center;
+    align-self: center;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
+  .button {
+    padding: 20px 20px;
+  }
+
   header {
-    padding: auto;
+    padding: 50px 50px;
     flex-direction: column;
     row-gap: 30px;
   }
 
-  .banner {
-    flex-direction: column;
+  .banner-left {  
+    padding: 50px 50px;
+    background-size: 100% 100%;
+  }
+
+  .banner-right {
+    margin: 0 50px;
+    justify-content: center;
+    align-self: center;
   }
 }
