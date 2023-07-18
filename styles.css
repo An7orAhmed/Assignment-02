@@ -239,6 +239,38 @@ header {
   left: -15%;
 }
 
+.career {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #FF42A5;
+}
+
+.car-left {
+  padding: 120px 0 120px 240px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  color: white;
+}
+
+.car-left h3 {
+  font-size: 2em;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.career .button {
+  width: max-content;
+  margin-top: 20px;
+  color: #FF42A5;
+  background-color: white;
+  font-weight: bold;
+}
+
 /*Other device breakpoints */
 @media (max-width: 576px) {
   .button {
@@ -307,6 +339,18 @@ header {
   .img2 {
     left: 25%;
   }
+
+  .career {
+    grid-template-columns: 1fr;
+  }
+
+  .car-left {
+    padding: 50px 50px;
+  }
+
+  .item p {
+    font-size: 0.95em;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
@@ -366,5 +410,13 @@ header {
 
   .img2 {
     left: 25%;
+  }
+
+  .career {
+    grid-template-columns: 1fr;
+  }
+
+  .car-left {
+    padding: 50px 50px;
   }
 }
