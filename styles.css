@@ -1,0 +1,45 @@
+
+* {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  justify-content: space-between;
+  margin: 0 240px;
+  padding: 20px 0;
+}
+
+.head-left {
+  column-gap: 20px;
+}
+
+.head-left h3 {
+  font-size: 45px;
+}
+
+.head-left span {
+  color: #FF42A5;
+}
+
+.head-right {
+  column-gap: 25px;
+}
+
+.follow-us {
+  column-gap: 16px;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.10);
+  padding: 15px 24px;
+}
+
+/*Other device breakpoints */
