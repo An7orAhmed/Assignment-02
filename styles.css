@@ -29,7 +29,7 @@ header {
 }
 
 .head-left h3 {
-  font-size: 45px;
+  font-size: 4em;
 }
 
 .head-left span {
@@ -73,7 +73,7 @@ header {
   text-transform: uppercase;
 }
 
-.banner-left h1, .gamer-right h1 {
+.banner-left h1, .gamer-right h1, .videos h2 span {
   font-size: 4em;
   background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
   background-clip: text;
@@ -124,20 +124,77 @@ header {
 }
 
 .gamer-right h1 {
-  font-size: 48px;
+  font-size: 3em;
 }
 
 .gamer-right h4 {
-  font-size: 24px;
+  font-size: 1.7em;
   font-weight: normal;
 }
 
 .gamer-right h3 {
-  font-size: 32px;
+  font-size: 2.4em;
+  text-align: center;
 }
 
 .gamer-right p { 
   text-align: right;
+}
+
+.videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 240px;
+  row-gap: 16px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 24px;
+}
+
+.videos h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.videos h2 span {
+  font-size: 1em;
+}
+
+.card {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hover {
+  width: calc(100% - 10px);
+  height: calc(100% - 72px);
+  border: 5px solid #F948B2;
+  border-radius: 16px;
+  position: absolute;
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.5s;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+  background-color: rgba(0, 0, 0, 0.60);
+}
+
+.hover h3 {
+  color: #F948B2;
+}
+
+.card:hover .hover {
+  opacity: 1;
 }
 
 /*Other device breakpoints */
@@ -183,6 +240,15 @@ header {
   .gamer-right p {
     text-align: center;
   }
+
+  .videos {
+    padding: 50px 50px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
@@ -217,5 +283,14 @@ header {
 
   .gamer-right p {
     text-align: center;
+  }
+
+  .videos {
+    padding: 50px 50px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
   }
 }
