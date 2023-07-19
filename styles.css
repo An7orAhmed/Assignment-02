@@ -273,8 +273,10 @@ header {
 
 .category {
   padding: 120px 240px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   column-gap: 24px;
   row-gap: 24px;
   background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
@@ -420,7 +422,6 @@ footer {
 
   .category {
     padding: 50px 50px;
-    grid-template-columns: 1fr;
   }
 
   footer {
@@ -505,7 +506,6 @@ footer {
 
   .category {
     padding: 50px 50px;
-    grid-template-columns: repeat(2, 1fr);
   }
 
   footer {
