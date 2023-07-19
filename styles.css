@@ -204,10 +204,10 @@ header {
 }
 
 .no-downloads {
-  padding: 0 240px 195px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  padding: 0 240px 220px;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .down-left {
@@ -235,8 +235,16 @@ header {
   width: 50%;
   height: 60%;
   position: absolute;
-  bottom: -10%;
+  bottom: -15%;
   left: -15%;
+}
+
+.rev .img2 {
+  left: 70%;
+}
+
+.rev .down-left {
+  text-align: left;
 }
 
 .career {
@@ -394,17 +402,21 @@ footer {
 
   .no-downloads {
     padding: 0 50px 100px;
-    grid-template-columns: 1fr;
+    flex-direction: column;
     row-gap: 20px;
   }
 
-  .down-left {
+  .rev {
+    flex-direction: column-reverse;
+  }
+
+  .down-left, .rev .down-left {
     width: 100%;
     align-items: center;
     text-align: center;
   }
 
-  .img2 {
+  .img2, .rev .img2 {
     left: 25%;
   }
 
@@ -478,17 +490,21 @@ footer {
 
   .no-downloads {
     padding: 0 50px 150px;
-    grid-template-columns: 1fr;
+    flex-direction: column;
     row-gap: 20px;
   }
 
-  .down-left {
+  .rev {
+    flex-direction: column-reverse;
+  }
+
+  .down-left, .rev .down-left {
     width: 100%;
     align-items: center;
     text-align: center;
   }
 
-  .img2 {
+  .img2, .rev .img2 {
     left: 25%;
   }
 
