@@ -316,14 +316,20 @@ footer {
 
 .foot-nav, .foot-icons {
   display: grid;
-  grid-template-columns: repeat(6, 120px);
+  grid-template-columns: repeat(6, auto);
+  column-gap: 24px;
+  row-gap: 24px;
   justify-content: center;
+  align-items: center;
 }
 
 .foot-menu {
   display: grid;
-  grid-template-columns: repeat(4, 200px);
+  grid-template-columns: repeat(4, auto);
+  column-gap: 24px;
+  row-gap: 24px;
   justify-content: center;
+  align-items: center;
   color: rgba(255, 255, 255, 0.60);
 }
 
@@ -422,7 +428,11 @@ footer {
   }
 
   .foot-nav, .foot-icons {
-    grid-template-columns: repeat(3, 120px);
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .foot-menu {
+    grid-template-columns: repeat(2, auto);
   }
 }
 
@@ -503,7 +513,12 @@ footer {
   }
 
   .foot-nav, .foot-icons {
-    grid-template-columns: repeat(3, 120px);
-    row-gap: 20px;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 48px;
+  }
+
+  .foot-menu {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 48px;
   }
 }
