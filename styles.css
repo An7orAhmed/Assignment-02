@@ -420,11 +420,7 @@ footer {
     font-size: 0.95em;
   }
 
-  .category {
-    padding: 50px 50px;
-  }
-
-  footer {
+  .category, footer {
     padding: 50px 50px;
   }
 
@@ -500,15 +496,7 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .car-left {
-    padding: 50px 50px;
-  }
-
-  .category {
-    padding: 50px 50px;
-  }
-
-  footer {
+  .car-left, footer, .category {
     padding: 50px 50px;
   }
 
