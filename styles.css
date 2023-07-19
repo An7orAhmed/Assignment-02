@@ -37,7 +37,7 @@ header {
   font-size: 4em;
 }
 
-.head-left span {
+.head-left span, .foot-title span {
   color: #FF42A5;
 }
 
@@ -296,6 +296,41 @@ header {
   color: #FF42A5;
 }
 
+footer {
+  color: white;
+  background-color: #0B0223;
+  padding: 120px 240px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 65px;
+}
+
+.foot-title {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.foot-nav, .foot-icons {
+  display: grid;
+  grid-template-columns: repeat(6, 120px);
+  justify-content: center;
+}
+
+.foot-menu {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.60);
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.60);
+}
+
 /*Other device breakpoints */
 @media (max-width: 576px) {
   .button {
@@ -381,6 +416,14 @@ header {
     padding: 50px 50px;
     grid-template-columns: 1fr;
   }
+
+  footer {
+    padding: 50px 50px;
+  }
+
+  .foot-nav, .foot-icons {
+    grid-template-columns: repeat(3, 120px);
+  }
 }
 
 @media (min-width: 577px) and (max-width: 992px) {
@@ -453,5 +496,14 @@ header {
   .category {
     padding: 50px 50px;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    padding: 50px 50px;
+  }
+
+  .foot-nav, .foot-icons {
+    grid-template-columns: repeat(3, 120px);
+    row-gap: 20px;
   }
 }
