@@ -298,7 +298,9 @@ header {
   column-gap: 16px;
   padding: 10px 20px;
   background: white;
+  transition: color 0.5s;
   font-weight: bold;
+  border: 2px solid white;
 }
 
 .option:hover {
